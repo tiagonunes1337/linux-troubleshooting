@@ -13,6 +13,6 @@ Neste repositório, pretendo catalogar resoluções de problemas comuns e config
 
 ## 📝 Documentação Recente
 
-- [Intel AX210 Wi-Fi Initialization Issues](https://www.google.com/search?q=README_AX210.md) - Resolução de conflitos de hardware entre Windows e Linux.
+- [Intel AX210 Wi-Fi Initialization Issues](https://www.google.com/search?q=README_AX210.md) - Resolução de conflitos de hardware entre Windows e Linux com conectividade.
 
 > *Este repositório faz parte do meu portfólio como estudante de Engenharia de Software. Documentar esses problemas técnicos é parte essencial do meu aprendizado para garantir um ambiente de desenvolvimento robusto, estável e eficiente.*

@@ -56,18 +56,6 @@ O problema, na maioria das vezes, é que o sistema montou o disco com permissõe
 
 ---
 
-## Evidências Visuais: Processo Funcionando vs. Com Problema
-
-### ✅ Processo Funcionando Corretamente
-![Processo funcionando - Steam Library adicionada com sucesso](./images/steam-sucesso.png)
-
-### ❌ Quando Estava Dando Problema - Erro 1
-![Erro de permissão - Tentativa 1](./images/erro-permissao-1.png)
-
-### ❌ Quando Estava Dando Problema - Erro 2
-![Erro de permissão - Tentativa 2](./images/erro-permissao-2.png)
-
----
 
 ## Dicas de Infraestrutura para Iniciantes
 *   **O terminal é seu melhor amigo:** Sempre que algo não funcionar, verifique os logs. `dmesg -w` em tempo real pode mostrar exatamente o erro de I/O ou permissão que o sistema está bloqueando.

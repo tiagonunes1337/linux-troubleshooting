@@ -15,4 +15,6 @@ Neste repositório, pretendo catalogar resoluções de problemas comuns e config
 
 - [Intel AX210 Wi-Fi Initialization Issues](https://github.com/tiagonunes1337/linux-troubleshooting/blob/main/README_AX210.md) - Resolução de conflitos de hardware entre Windows e Linux com conectividade.
 
+- [Guia de Resolução de Problemas: Linux & Discos (Steam Library)] (https://github.com/tiagonunes1337/linux-troubleshooting/blob/main/README_particaosteam.md)
+
 > *Este repositório faz parte do meu portfólio como estudante de Engenharia de Software. Documentar esses problemas técnicos é parte essencial do meu aprendizado para garantir um ambiente de desenvolvimento robusto, estável e eficiente.*

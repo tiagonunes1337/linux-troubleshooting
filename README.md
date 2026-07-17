@@ -1,20 +1,22 @@
 # Linux Troubleshooting & Tech Diary
-Este repositório é o meu "diário de bordo" técnico. Aqui, documento soluções para problemas, dicas de otimização, configurações de hardware e ajustes de firmware que encontro no meu dia a dia trabalhando com sistemas Linux.
 
-O objetivo é centralizar conhecimentos que vão além do desenvolvimento de software, focando na estabilidade e na manutenção preventiva do meu ambiente de trabalho e estudo.
+Este repositório é o meu diário de bordo técnico. Aqui, registro soluções, dicas de otimização, configurações de hardware e ajustes de firmware que encontro no meu dia a dia trabalhando com sistemas Linux.
 
-## 🛠 O que você encontrará aqui
-Neste repositório, pretendo catalogar resoluções de problemas comuns e configurações avançadas, incluindo:
+## 📚 Seções do repositório
 
-- **Hardware & Firmware:** Diagnóstico e resolução de conflitos (como problemas de inicialização entre sistemas em Dual Boot).
-- **Rede & Conectividade:** Configuração e troubleshooting de adaptadores de rede (Wi-Fi/Ethernet) e drivers.
-- **Manutenção de Sistema:** Dicas de atualização, otimização de kernel e gerenciamento de pacotes.
-- **Dicas de Produtividade:** Comandos úteis, automações e melhorias no fluxo de trabalho diário.
+### 🎮 Jogos
+Conteúdos relacionados a configuração de hardware, volantes e jogos no Linux.
 
-## 📝 Documentação Recente
+- [Configuração do Volante Logitech G29 no Ubuntu 26.04 LTS](jogos/README_oversteerconfiguration.md) — guia atualizado em 17/07/2026 para instalação do driver new-lg4ff e Oversteer.
+- [Guia de Resolução de Problemas: Linux & Discos (Steam Library)](jogos/README_particaosteam.md) — soluções para problemas com Ubuntu e Steam.
 
-- [Intel AX210 Wi-Fi Initialization Issues](https://github.com/tiagonunes1337/linux-troubleshooting/blob/main/README_AX210.md) - Resolução de conflitos de hardware entre Windows e Linux com conectividade.
+### 🛠️ Resolução de problemas, bugs e manutenção
+Documentação para debugging, drivers, rede e estabilidade do sistema.
 
-- [Guia de Resolução de Problemas: Linux & Discos (Steam Library)] (https://github.com/tiagonunes1337/linux-troubleshooting/blob/main/README_particaosteam.md)
+- [Intel AX210 Wi-Fi Initialization Issues](resolucao-de-problemas/README_AX210.md) — resolução de conflitos de hardware e conectividade entre Windows e Linux.
 
-> *Este repositório faz parte do meu portfólio como estudante de Engenharia de Software. Documentar esses problemas técnicos é parte essencial do meu aprendizado para garantir um ambiente de desenvolvimento robusto, estável e eficiente.*
+## 🎯 Objetivo
+Centralizar aprendizados, problemas resolvidos e configurações úteis para manter o ambiente mais estável, organizado e produtivo.
+
+> Este repositório faz parte do meu portfólio como estudante de Engenharia de Software, estagiário de infraestrutura e profissional da área de TI. Documentar problemas técnicos, soluções e boas práticas é essencial para meu crescimento profissional e para facilitar futuras manutenções e troubleshooting.
+

@@ -49,54 +49,51 @@ Em algumas placas-mãe, especialmente modelos ASRock, a energia pode permanecer 
    - **Lan Devices Power On / Wake-on-LAN**: desative.
 4. Salve as mudanças com `F10` e reinicie.
 
-### 5. Desbloqueio Automático no Linux com systemd
-Se o sistema continuar aplicando um bloqueio suave no adaptador Wi-Fi durante o boot, você pode criar um serviço para desbloqueá-lo automaticamente.
+### 5. Reinício Forçado do NetworkManager no Boot (A Solução Definitiva)
+Se após os passos acima o serviço de rede ainda se perder ao inicializar, o problema é uma falha de sincronia temporal entre o carregamento do módulo `iwlwifi` e o NetworkManager. A correção exige a criação de um serviço para forçar o reinício da rede com um atraso lógico.
 
 1. Crie o arquivo do serviço:
 
 ```bash
-sudo nano /etc/systemd/system/wifi-unblock.service
+sudo nano /etc/systemd/system/restart-network-manager.service
 ```
 
-2. Cole o conteúdo abaixo:
+Cole o conteúdo abaixo:
 
 ```ini
 [Unit]
-Description=Unblock WiFi at startup
+Description=Restart NetworkManager to fix Wi-Fi initialization
 After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/rfkill unblock wifi
+ExecStart=/bin/bash -c 'sleep 10 && /usr/bin/systemctl restart NetworkManager'
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-3. Salve e saia do editor (`Ctrl+O`, `Enter`, `Ctrl+X`).
+**Nota:** O parâmetro `sleep 10` é crucial para garantir que o kernel tenha tempo de carregar a interface física antes do sistema de rede tentar se conectar.
 
-4. Habilite o serviço:
+Salve e saia do editor (Ctrl+O, Enter, Ctrl+X).
+
+Habilite o serviço:
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable wifi-unblock.service
+sudo systemctl enable restart-network-manager.service
 ```
 
-## Verificação Final
-Após reiniciar o Linux, confirme se o driver `iwlwifi` foi carregado corretamente:
+### Verificação Final
+
+Após reiniciar o Linux, confirme se o driver iwlwifi foi carregado corretamente:
 
 ```bash
 lspci -k | grep -A 3 -i network
 ```
 
-Para validar se o desbloqueio do `rfkill` funcionou, use:
+Para validar se o serviço de rede reiniciou e ativou a conexão adequadamente, verifique o status do NetworkManager:
 
 ```bash
-rfkill list
+systemctl status NetworkManager
 ```
-
-O adaptador não deve aparecer com a opção "Soft blocked: yes".
-
----
-
-Log técnico desenvolvido como parte do portfólio de Engenharia de Software, documentando a resolução de problemas de hardware e sistemas operacionais.

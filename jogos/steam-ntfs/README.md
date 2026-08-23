@@ -162,4 +162,4 @@ if [[ "$MOUNT_OPTIONS" != *"noexec"* ]]; then
 4. **Ferramentas Mentem (Ocasionalmente):** A linha de comando `findmnt` assume que você conhece as convenções do Linux (ocultar flags default). Se basear em regex cego (`*exec*`) gera dívida técnica.
 
 ---
-**Autor:** Equipe de Infraestrutura e Automação | **Versão:** 1.3 | **Status:** ✅ Homologado
+**Autor:** Tiago de Aquino Nunes | **Versão:** 1.3 | **Status:** ✅ Homologado

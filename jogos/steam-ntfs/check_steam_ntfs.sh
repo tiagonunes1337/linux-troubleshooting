@@ -56,7 +56,7 @@ else
 fi
 
 if [[ "$MOUNT_OPTIONS" != *"noexec"* ]]; then
-    echo -e "   ${GREEN}[OK] Permissão de execução ativada (exec)${NC}"
+    echo -e "   ${GREEN}[OK] Permissão de execução ativada (sem bloqueios noexec)${NC}"
 else
     echo -e "   ${RED}[FALHA] Faltando flag 'exec' (Obrigatório para o Proton jogar)${NC}"
 fi

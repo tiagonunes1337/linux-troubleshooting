@@ -45,7 +45,7 @@ Um acesso SSH poderá aparecer aproximadamente assim:
 ```text
 ┌─ LOGIN ACEITO
 │ Data/Hora : Aug 10 08:32:15
-│ Usuário   : servidornunes
+│ Usuário   : servidor
 │ IP        : 192.168.15.20
 │ MAC       : 24:4b:fe:xx:xx:xx
 │ Método    : publickey

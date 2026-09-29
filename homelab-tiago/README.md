@@ -1,6 +1,6 @@
 # 🖥️ Home Lab & Servidor Doméstico
 
-**Autor:** `<NOME>`
+**Autor:** `Tiago Nunes`
 **Hardware:** Lenovo ThinkCentre Edge 72
 **Sistema Operacional:** Linux Mint
 **Gerenciador de Contêineres:** Docker + CasaOS
@@ -262,6 +262,7 @@ Antes de realizar um `git push`, é importante revisar os arquivos modificados e
 * [ ] Estratégia de backup implementada;
 * [ ] Estratégia de recuperação das chaves definida;
 * [ ] Monitoramento dos serviços implementado.
+* [x] Proteção do SAMBA contra Ransomware
 
 ---
 
